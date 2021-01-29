@@ -3,5 +3,7 @@ project(bitcoin)
 
 message("I'm /")
 
+enable_testing()
+
 add_subdirectory(doc/man)
 add_subdirectory(src)
