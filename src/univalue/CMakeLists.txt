@@ -31,6 +31,7 @@ target_link_libraries(object libunivalue)
 
 add_executable(gen gen/gen.cpp)
 target_include_directories(gen PRIVATE include)
+# todo: consider deleting lib/univalue_escapes.h, since it is generated below
 add_custom_command(
   TARGET gen
   POST_BUILD
